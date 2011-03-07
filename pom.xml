@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>template-study</groupId>
+	<artifactId>template-study</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<!-- 20110214 从今天开始使用m2eclipse，它的作用和ivy插件类似，可以通过pom.xml来设置编译路径。 必须将pom.xml中的输出路径和工程属性中的输出路径设置成一致，否则在“run 
+			appliction”时会出现找不到class的现象。 这里将输出理解设置成目录bin。由于本文件不用于打包，所以这个修改不影响打包。 -->
+		<outputDirectory>bin</outputDirectory>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.16</version>
+		</dependency>
+	</dependencies>
+</project>
